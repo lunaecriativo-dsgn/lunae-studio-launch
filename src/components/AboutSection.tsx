@@ -1,3 +1,6 @@
+import aboutIllustration from "@/assets/about-illustration.png";
+import personagensCores from "@/assets/personagens-cores.png";
+
 const AboutSection = () => {
   return (
     <section id="sobre" className="py-20 md:py-32 scroll-mt-20">
@@ -9,7 +12,7 @@ const AboutSection = () => {
         </div>
 
         {/* About Content */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
           <div className="space-y-6">
             <p className="text-lg font-body text-foreground leading-relaxed">
               A Lunae nasceu da união entre Luiza e Nayla, refletindo nossa conexão com o Design e a Criatividade. 
@@ -25,30 +28,13 @@ const AboutSection = () => {
             </p>
           </div>
 
+          {/* About Illustration */}
           <div className="flex items-center justify-center">
-            {/* Decorative moon illustration placeholder */}
-            <div className="relative w-64 h-64">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl" />
-              <div className="relative w-full h-full flex items-center justify-center">
-                <svg viewBox="0 0 100 100" className="w-48 h-48" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="hsl(var(--primary))" />
-                      <stop offset="100%" stopColor="hsl(var(--secondary))" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="50" cy="50" r="40" fill="url(#moonGradient)" opacity="0.3" />
-                  <path
-                    d="M50,10 A40,40 0 1,1 50,90 A30,30 0 1,0 50,10"
-                    fill="url(#moonGradient)"
-                    opacity="0.8"
-                  />
-                  <circle cx="35" cy="35" r="3" fill="hsl(var(--secondary))" opacity="0.6" />
-                  <circle cx="60" cy="55" r="2" fill="hsl(var(--secondary))" opacity="0.4" />
-                  <circle cx="45" cy="65" r="2.5" fill="hsl(var(--secondary))" opacity="0.5" />
-                </svg>
-              </div>
-            </div>
+            <img
+              src={aboutIllustration}
+              alt="Ilustração de duas pessoas criativas celebrando juntas"
+              className="w-full max-w-md animate-float"
+            />
           </div>
         </div>
 
@@ -90,6 +76,15 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Character illustration as section divider - Full width outside container */}
+      <div className="mt-20 w-full overflow-hidden">
+        <img
+          src={personagensCores}
+          alt="Ilustração colorida de personagens criativos flutuando em uma onda roxa"
+          className="w-full max-w-6xl mx-auto"
+        />
       </div>
     </section>
   );
