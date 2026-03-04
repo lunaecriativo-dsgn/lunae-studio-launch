@@ -34,8 +34,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? "bg-lunae-dark/85 backdrop-blur-md border-foreground/10 shadow-md py-2"
-          : "bg-lunae-dark/60 backdrop-blur-sm border-foreground/5 py-3"
+          ? "bg-lunae-light/92 backdrop-blur-md border-muted/60 shadow-sm py-2"
+          : "bg-lunae-light/80 backdrop-blur-sm border-muted/30 py-3"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -59,7 +59,7 @@ const Header = () => {
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="font-body font-medium text-lunae-light/90 hover:text-accent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent rounded-lg px-2 py-2 min-h-[44px] inline-flex items-center text-sm lg:text-base"
+                  className="font-body font-medium text-foreground/80 hover:text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg px-3 py-2 min-h-[44px] inline-flex items-center text-sm lg:text-base"
                 >
                   {item.label}
                 </a>
@@ -78,7 +78,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-lunae-light/90 hover:text-accent focus:outline-none focus:ring-2 focus:ring-accent rounded-lg min-w-[44px] min-h-[44px] inline-flex items-center justify-center"
+            className="md:hidden p-2 text-primary hover:text-accent focus:outline-none focus:ring-2 focus:ring-primary rounded-lg min-w-[44px] min-h-[44px] inline-flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isMobileMenuOpen}
@@ -89,14 +89,14 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 animate-fade-in-up border-t border-foreground/10 pt-4" aria-label="Menu mobile">
+          <nav className="md:hidden mt-4 pb-4 animate-fade-in-up border-t border-muted/40 pt-4" aria-label="Menu mobile">
             <ul className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className="block font-body font-medium text-lunae-light/90 hover:text-accent transition-colors duration-200 py-3 px-2 min-h-[44px] focus:outline-none focus:ring-2 focus:ring-accent rounded-lg"
+                    className="block font-body font-medium text-foreground/80 hover:text-primary transition-colors duration-200 py-3 px-2 min-h-[44px] focus:outline-none focus:ring-2 focus:ring-primary rounded-lg"
                   >
                     {item.label}
                   </a>
