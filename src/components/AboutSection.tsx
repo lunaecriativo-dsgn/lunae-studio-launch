@@ -43,7 +43,7 @@ const AboutSection = () => {
           {/* Propósito Card */}
           <div className="service-card text-left">
             <span className="text-4xl mb-4 block" aria-hidden="true">💡</span>
-            <h3 className="service-title text-2xl md:text-3xl font-display text-primary mb-3">
+            <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
               PROPÓSITO
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed">
@@ -54,7 +54,7 @@ const AboutSection = () => {
           {/* Valores Card */}
           <div className="service-card text-left">
             <span className="text-4xl mb-4 block" aria-hidden="true">✨</span>
-            <h3 className="service-title text-2xl md:text-3xl font-display text-primary mb-3">
+            <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
               VALORES
             </h3>
             <ul className="font-body text-muted-foreground leading-relaxed space-y-2 list-none mt-4">
