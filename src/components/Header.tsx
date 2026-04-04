@@ -53,13 +53,13 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-6 lg:gap-8">
+          <ul className="hidden md:flex items-center gap-8 lg:gap-10">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="font-body font-medium text-primary-foreground/85 hover:text-primary-foreground transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent rounded-lg px-3 py-2 min-h-[44px] inline-flex items-center text-sm lg:text-base"
+                  className="font-body font-medium text-primary-foreground/85 hover:text-primary-foreground transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent rounded-lg px-3 py-2 min-h-[44px] inline-flex items-center text-[16px]"
                 >
                   {item.label}
                 </a>
@@ -69,7 +69,7 @@ const Header = () => {
               <a
                 href="#cta"
                 onClick={(e) => handleNavClick(e, "#cta")}
-                className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
+                className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-[15px] focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
               >
                 Fale direto conosco
               </a>
@@ -106,7 +106,7 @@ const Header = () => {
                 <a
                   href="#cta"
                   onClick={(e) => handleNavClick(e, "#cta")}
-                  className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-sm inline-block mt-2 focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
+                  className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-sm inline-flex items-center mt-2 focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px]"
                 >
                   Fale direto conosco
                 </a>

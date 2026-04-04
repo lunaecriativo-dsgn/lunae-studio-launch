@@ -101,7 +101,7 @@ const TeamSection = () => {
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-16">
-          <h2 className="section-title">EQUIPE LUNAE</h2>
+          <h2 className="section-title">Equipe Lunae</h2>
           <div className="organic-divider w-36 mt-4" aria-hidden="true" />
           <p className="font-body text-lg text-muted-foreground mt-6 max-w-2xl">
             Somos um Estúdio Criativo que une estratégia e arte para construir marcas, 

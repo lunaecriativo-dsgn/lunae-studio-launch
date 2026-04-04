@@ -170,7 +170,7 @@ const ProjectsSection = () => {
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-16">
-          <h2 className="section-title">PROJETOS</h2>
+          <h2 className="section-title">Projetos</h2>
           <div className="organic-divider w-28 mt-4" aria-hidden="true" />
         </div>
 

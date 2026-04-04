@@ -81,7 +81,7 @@ const ServicesSection = () => {
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-12">
-          <h2 className="section-title">SERVIÇOS</h2>
+          <h2 className="section-title">Serviços</h2>
           <div className="organic-divider w-32 mt-4" aria-hidden="true" />
         </div>
 

@@ -21,12 +21,12 @@ const HeroSection = () => {
       <div className="section-container relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Text Content */}
-          <div className="animate-fade-in-up">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display text-primary leading-tight mb-6">
+          <div className="animate-fade-in-up moon-glow">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-body font-medium text-primary leading-snug mb-6">
               "Transformamos ideias em experiências visuais que inspiram e conectam."
             </h1>
             
-            <p className="text-lg md:text-xl font-body text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="text-base md:text-lg font-body text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
               Design visual, UX e estratégia digital unidos para contar a história única do seu negócio.
             </p>
 
@@ -34,13 +34,13 @@ const HeroSection = () => {
               <a
                 href="#cta"
                 onClick={(e) => handleCTAClick(e, "#cta")}
-                className="btn-primary text-lg focus-ring"
+                className="btn-primary text-base focus-ring"
               >
                 Vamos criar juntos?
               </a>
               <button
                 onClick={handleWhatsApp}
-                className="btn-secondary text-lg focus-ring"
+                className="btn-secondary text-base focus-ring"
               >
                 Fale direto conosco
               </button>

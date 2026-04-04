@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,18 +16,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 6% 9%;
 
-    /* Primary: Deep Purple #443A94 - 30% */
-    --primary: 247 44% 40%;
+    /* Primary: Deep Purple #5043A1 - 30% */
+    --primary: 245 38% 45%;
     --primary-foreground: 0 0% 94%;
 
-    /* Secondary: Coral Pink #FA7C9C - 10% */
-    --secondary: 348 93% 73%;
+    /* Secondary: Coral Pink #FF879A - 10% */
+    --secondary: 351 100% 77%;
     --secondary-foreground: 240 6% 9%;
 
     --muted: 0 0% 85%; /* #D9D9D9 */
     --muted-foreground: 240 6% 30%;
 
-    --accent: 348 93% 73%;
+    --accent: 351 100% 77%;
     --accent-foreground: 240 6% 9%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,21 +35,21 @@
 
     --border: 0 0% 85%;
     --input: 0 0% 85%;
-    --ring: 247 44% 40%;
+    --ring: 245 38% 45%;
 
     --radius: 0.75rem;
 
     /* Custom Lunae tokens */
-    --lunae-purple: 247 44% 40%;
-    --lunae-pink: 348 93% 73%;
+    --lunae-purple: 245 38% 45%;
+    --lunae-pink: 351 100% 77%;
     --lunae-light: 0 0% 94%;
     --lunae-dark: 240 6% 9%;
     --lunae-gray: 0 0% 85%;
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(247 44% 40% / 0.15);
-    --shadow-card: 0 8px 32px -8px hsl(247 44% 40% / 0.12);
-    --shadow-hover: 0 12px 40px -8px hsl(247 44% 40% / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(245 38% 45% / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(245 38% 45% / 0.12);
+    --shadow-hover: 0 12px 40px -8px hsl(245 38% 45% / 0.2);
   }
 
   .dark {
@@ -59,17 +59,17 @@
     --card-foreground: 0 0% 94%;
     --popover: 240 6% 12%;
     --popover-foreground: 0 0% 94%;
-    --primary: 247 44% 55%;
+    --primary: 245 38% 55%;
     --primary-foreground: 0 0% 94%;
-    --secondary: 348 93% 73%;
+    --secondary: 351 100% 77%;
     --secondary-foreground: 240 6% 9%;
     --muted: 240 6% 20%;
     --muted-foreground: 0 0% 70%;
-    --accent: 348 93% 73%;
+    --accent: 351 100% 77%;
     --accent-foreground: 240 6% 9%;
     --border: 240 6% 20%;
     --input: 240 6% 20%;
-    --ring: 247 44% 55%;
+    --ring: 245 38% 55%;
   }
 }
 
@@ -80,6 +80,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 18px;
   }
 
   body {
@@ -87,7 +88,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display uppercase tracking-wide;
+    @apply font-display tracking-wide;
   }
 }
 
@@ -104,11 +105,11 @@
   }
 
   .gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(247 44% 50%) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(245 38% 55%) 100%);
   }
 
   .gradient-secondary {
-    background: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(348 93% 65%) 100%);
+    background: linear-gradient(135deg, hsl(var(--secondary)) 0%, hsl(351 100% 68%) 100%);
   }
 
   .organic-border {
@@ -129,7 +130,7 @@
   }
 
   .service-card {
-    @apply bg-card rounded-xl p-6 cursor-pointer transition-all duration-300 ease-out;
+    @apply bg-card rounded-lg p-8 md:p-10 cursor-pointer transition-all duration-300 ease-out;
     box-shadow: var(--shadow-card);
   }
 
@@ -143,36 +144,36 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    @apply bg-primary text-white font-body font-semibold px-8 py-4 rounded-full transition-all duration-300 ease-out;
     box-shadow: var(--shadow-soft);
   }
 
   .btn-primary:hover {
     @apply bg-secondary text-white;
-    box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
+    box-shadow: 0 4px 20px -4px hsl(351 100% 77% / 0.4);
     transform: translateY(-2px);
   }
 
   .btn-secondary {
-    @apply bg-primary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    @apply bg-primary text-white font-body font-semibold px-8 py-4 rounded-full transition-all duration-300 ease-out;
     box-shadow: var(--shadow-soft);
   }
 
   .btn-secondary:hover {
     @apply bg-secondary text-white;
-    box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
+    box-shadow: 0 4px 20px -4px hsl(351 100% 77% / 0.4);
     transform: translateY(-2px);
   }
 
   .btn-accent {
-    @apply bg-primary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    @apply bg-primary text-white font-body font-semibold px-8 py-4 rounded-full transition-all duration-300 ease-out;
     box-shadow: var(--shadow-soft);
   }
 
   .btn-accent:hover {
     @apply bg-secondary text-white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
+    box-shadow: 0 4px 20px -4px hsl(351 100% 77% / 0.4);
   }
 
   .section-title {
@@ -196,6 +197,25 @@
     content: '';
     @apply absolute inset-0 bg-white;
     z-index: -1;
+  }
+
+  /* Moon glow effect */
+  .moon-glow {
+    position: relative;
+  }
+
+  .moon-glow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 150%;
+    background: radial-gradient(ellipse at center, hsl(351 100% 77% / 0.06) 0%, hsl(0 0% 94% / 0.03) 40%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+    border-radius: 50%;
   }
 
   /* Focus styles for accessibility */
