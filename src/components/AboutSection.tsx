@@ -38,42 +38,31 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Purpose and Values */}
-        <div className="relative">
-          {/* Organic hand-drawn divider */}
-          <div className="flex justify-center mb-16">
-            <svg viewBox="0 0 600 40" className="w-full max-w-2xl h-10" aria-hidden="true">
-              <path
-                d="M0,20 C50,10 100,30 150,20 S250,10 300,20 S400,30 450,20 S550,10 600,20"
-                fill="none"
-                stroke="hsl(var(--secondary))"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeDasharray="8 4"
-                className="opacity-60"
-              />
-            </svg>
+        {/* Purpose and Values - Card Layout */}
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+          {/* Propósito Card */}
+          <div className="service-card text-left">
+            <span className="text-4xl mb-4 block" aria-hidden="true">💡</span>
+            <h3 className="service-title text-2xl md:text-3xl font-display text-primary mb-3">
+              PROPÓSITO
+            </h3>
+            <p className="font-body text-muted-foreground leading-relaxed">
+              Ajudar marcas e pequenos negócios a se expressarem visualmente com autenticidade, estratégia e significado.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
-            {/* Purpose */}
-            <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-display text-primary mb-6">PROPÓSITO</h3>
-              <p className="text-lg font-body text-foreground leading-relaxed">
-                Ajudar marcas e pequenos negócios a se expressarem visualmente com autenticidade, estratégia e significado.
-              </p>
-            </div>
-
-            {/* Values */}
-            <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-display text-primary mb-6">VALORES</h3>
-              <ul className="text-lg font-body text-foreground leading-relaxed space-y-2 list-none">
-                <li>✦ Criatividade com propósito</li>
-                <li>✦ Design acessível e funcional</li>
-                <li>✦ Parceria e colaboração</li>
-                <li>✦ Estratégia antes da estética</li>
-              </ul>
-            </div>
+          {/* Valores Card */}
+          <div className="service-card text-left">
+            <span className="text-4xl mb-4 block" aria-hidden="true">✨</span>
+            <h3 className="service-title text-2xl md:text-3xl font-display text-primary mb-3">
+              VALORES
+            </h3>
+            <ul className="font-body text-muted-foreground leading-relaxed space-y-2 list-none mt-4">
+              <li>✦ Criatividade com propósito</li>
+              <li>✦ Design acessível e funcional</li>
+              <li>✦ Parceria e colaboração</li>
+              <li>✦ Estratégia antes da estética</li>
+            </ul>
           </div>
         </div>
       </div>
