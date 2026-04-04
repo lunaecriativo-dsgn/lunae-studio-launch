@@ -7,22 +7,22 @@ const AboutSection = () => {
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-16">
-          <h2 className="section-title">SOBRE NÓS</h2>
+          <h2 className="section-title">Sobre Nós</h2>
           <div className="organic-divider w-40 mt-4" aria-hidden="true" />
         </div>
 
         {/* About Content */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-          <div className="space-y-6">
-            <p className="text-lg font-body text-foreground leading-relaxed">
+          <div className="space-y-6 moon-glow">
+            <p className="font-body text-foreground leading-relaxed">
               A Lunae nasceu da união entre Luiza e Nayla, refletindo nossa conexão com o Design e a Criatividade. 
               Além da beleza do nosso nome, "Lunae" significa "Lua" em latim – símbolo de transformação e inspiração.
             </p>
-            <p className="text-lg font-body text-foreground leading-relaxed">
+            <p className="font-body text-foreground leading-relaxed">
               Nosso primeiro projeto juntas foi um presente para uma mentora chamada Lua, e desde então, 
               acreditamos que o design tem o poder de iluminar ideias e criar conexões autênticas.
             </p>
-            <p className="text-lg font-body text-foreground leading-relaxed">
+            <p className="font-body text-foreground leading-relaxed">
               Somos um Estúdio Criativo que une estratégia e arte para construir marcas, experiências visuais 
               e produtos digitais que deixam sua identidade brilhar.
             </p>
@@ -44,7 +44,7 @@ const AboutSection = () => {
           <div className="service-card text-left">
             <span className="text-4xl mb-4 block" aria-hidden="true">💡</span>
             <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
-              PROPÓSITO
+              Propósito
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed">
               Ajudar marcas e pequenos negócios a se expressarem visualmente com autenticidade, estratégia e significado.
@@ -55,7 +55,7 @@ const AboutSection = () => {
           <div className="service-card text-left">
             <span className="text-4xl mb-4 block" aria-hidden="true">✨</span>
             <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
-              VALORES
+              Valores
             </h3>
             <ul className="font-body text-muted-foreground leading-relaxed space-y-2 list-none mt-4">
               <li>✦ Criatividade com propósito</li>

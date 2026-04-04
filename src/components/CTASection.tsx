@@ -1,7 +1,6 @@
 const CTASection = () => {
   const handleFormClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    // Scroll to services section which has the form
     const element = document.querySelector("#servicos");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -20,14 +19,14 @@ const CTASection = () => {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl" aria-hidden="true" />
 
       <div className="section-container relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center moon-glow">
           {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-primary mb-6">
-            VAMOS CRIAR JUNTOS?
+            Vamos Criar Juntos?
           </h2>
 
           {/* Supporting text */}
-          <p className="text-lg md:text-xl font-body text-muted-foreground mb-10 leading-relaxed">
+          <p className="md:text-lg font-body text-muted-foreground mb-10 leading-relaxed">
             Estamos prontas para ouvir sua ideia e transformá-la em uma experiência visual única. 
             Escolha a melhor forma de entrar em contato conosco.
           </p>
@@ -37,7 +36,7 @@ const CTASection = () => {
             <a
               href="#servicos"
               onClick={handleFormClick}
-              className="btn-primary text-lg focus-ring"
+              className="btn-primary text-base focus-ring"
             >
               Preencher formulário
             </a>
@@ -46,7 +45,7 @@ const CTASection = () => {
 
             <button
               onClick={handleWhatsApp}
-              className="btn-accent text-lg focus-ring"
+              className="btn-accent text-base focus-ring"
             >
               Fala direto conosco
             </button>

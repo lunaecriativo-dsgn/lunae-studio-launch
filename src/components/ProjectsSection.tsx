@@ -170,7 +170,7 @@ const ProjectsSection = () => {
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-16">
-          <h2 className="section-title">PROJETOS</h2>
+          <h2 className="section-title">Projetos</h2>
           <div className="organic-divider w-28 mt-4" aria-hidden="true" />
         </div>
 
@@ -211,7 +211,7 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Project Info */}
-                <div className="p-6">
+                <div className="p-8">
                   <h3 className="text-2xl font-display text-primary mb-3">
                     {project.name}
                   </h3>
@@ -220,9 +220,9 @@ const ProjectsSection = () => {
                   </p>
                   <button 
                     onClick={() => setSelectedProject(project)}
-                    className="btn-secondary text-sm focus-ring"
+                    className="font-body font-medium text-primary hover:text-secondary transition-colors inline-flex items-center gap-2 focus-ring rounded-lg py-2"
                   >
-                    Ver detalhes
+                    Ver detalhes <span aria-hidden="true">→</span>
                   </button>
                 </div>
               </article>

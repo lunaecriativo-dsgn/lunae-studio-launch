@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <nav aria-label="Links rápidos">
-            <h3 className="font-display text-xl mb-4">LINKS RÁPIDOS</h3>
+            <h3 className="font-display text-xl mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <a
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Social & Contact */}
           <div>
-            <h3 className="font-display text-xl mb-4">REDES SOCIAIS</h3>
+            <h3 className="font-display text-xl mb-4">Redes Sociais</h3>
             <div className="flex gap-4">
               <a
                 href="#"
