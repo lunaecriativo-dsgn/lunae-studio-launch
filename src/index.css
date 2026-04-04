@@ -143,31 +143,36 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
-    box-shadow: var(--shadow-soft);
+    @apply bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
   }
 
   .btn-primary:hover {
+    @apply bg-primary text-white;
     box-shadow: var(--shadow-hover);
     transform: translateY(-2px);
   }
 
   .btn-secondary {
-    @apply border-2 border-primary text-primary font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out bg-transparent;
+    @apply bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
   }
 
   .btn-secondary:hover {
-    @apply bg-primary text-primary-foreground;
+    @apply bg-primary text-white;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
   }
 
   .btn-accent {
-    @apply bg-secondary text-secondary-foreground font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
+    @apply bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out;
     box-shadow: 0 4px 20px -4px hsl(348 93% 73% / 0.4);
   }
 
   .btn-accent:hover {
+    @apply bg-primary text-white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px hsl(348 93% 73% / 0.5);
+    box-shadow: var(--shadow-hover);
   }
 
   .section-title {
