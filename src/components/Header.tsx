@@ -106,7 +106,7 @@ const Header = () => {
                 <a
                   href="#cta"
                   onClick={(e) => handleNavClick(e, "#cta")}
-                  className="btn-accent text-sm inline-block mt-2 focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
+                  className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-sm inline-block mt-2 focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
                 >
                   Fale direto conosco
                 </a>
