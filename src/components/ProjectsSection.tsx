@@ -171,7 +171,7 @@ const ProjectsSection = () => {
         {/* Section Title */}
         <div className="mb-8">
           <h2 className="section-title">Projetos</h2>
-          <div className="organic-divider w-28 mt-4" aria-hidden="true" />
+          <div className="graphite-sketch" aria-hidden="true" />
         </div>
 
         {/* Projects Carousel */}
