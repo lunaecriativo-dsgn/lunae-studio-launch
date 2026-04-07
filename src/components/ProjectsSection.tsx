@@ -198,7 +198,8 @@ const ProjectsSection = () => {
             {displayProjects.map((project, index) => (
               <article
                 key={`${project.id}-${index}`}
-                className="bg-card rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl animate-fade-in"
+                className="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl animate-fade-in"
+                style={{ background: 'rgba(255, 255, 255, 0.9)' }}
               >
                 {/* Project Image */}
                 <div className="aspect-video overflow-hidden">

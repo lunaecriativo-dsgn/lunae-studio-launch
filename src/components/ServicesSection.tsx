@@ -82,7 +82,7 @@ const ServicesSection = () => {
         {/* Section Title */}
         <div className="mb-8">
           <h2 className="section-title">Serviços</h2>
-          <div className="organic-divider w-32 mt-4" aria-hidden="true" />
+          <div className="graphite-sketch" aria-hidden="true" />
         </div>
 
         {/* Services Grid */}
