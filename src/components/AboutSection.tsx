@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section id="sobre" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="section-title">Sobre Nós</h2>
           <div className="organic-divider w-40 mt-4" aria-hidden="true" />
         </div>
