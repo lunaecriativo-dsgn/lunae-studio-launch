@@ -166,7 +166,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projetos" className="py-20 md:py-32 scroll-mt-20 bg-card/50">
+    <section id="projetos" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-8">
