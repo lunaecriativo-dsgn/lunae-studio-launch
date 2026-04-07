@@ -90,6 +90,10 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-wide;
   }
+
+  h1 {
+    @apply font-bold;
+  }
 }
 
 @layer components {
@@ -177,7 +181,7 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl text-primary mb-4;
+    @apply text-4xl md:text-5xl lg:text-6xl text-primary mb-4 font-bold;
   }
 
   .organic-divider {

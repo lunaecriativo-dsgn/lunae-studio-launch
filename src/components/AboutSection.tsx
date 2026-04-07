@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section id="sobre" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="section-title">Sobre Nós</h2>
           <div className="organic-divider w-40 mt-4" aria-hidden="true" />
         </div>
@@ -41,9 +41,9 @@ const AboutSection = () => {
         {/* Purpose and Values - Card Layout */}
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {/* Propósito Card */}
-          <div className="service-card text-left">
-            <span className="text-4xl mb-4 block" aria-hidden="true">💡</span>
-            <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
+          <div className="service-card text-left !p-10 md:!p-12">
+            <span className="text-4xl mb-5 block" aria-hidden="true">💡</span>
+            <h3 className="text-2xl md:text-3xl font-display text-primary mb-4">
               Propósito
             </h3>
             <p className="font-body text-muted-foreground leading-relaxed">
@@ -52,12 +52,12 @@ const AboutSection = () => {
           </div>
 
           {/* Valores Card */}
-          <div className="service-card text-left">
-            <span className="text-4xl mb-4 block" aria-hidden="true">✨</span>
-            <h3 className="text-2xl md:text-3xl font-display text-primary mb-3">
+          <div className="service-card text-left !p-10 md:!p-12">
+            <span className="text-4xl mb-5 block" aria-hidden="true">✨</span>
+            <h3 className="text-2xl md:text-3xl font-display text-primary mb-4">
               Valores
             </h3>
-            <ul className="font-body text-muted-foreground leading-relaxed space-y-2 list-none mt-4">
+            <ul className="font-body text-muted-foreground leading-relaxed space-y-3 list-none mt-4">
               <li>✦ Criatividade com propósito</li>
               <li>✦ Design acessível e funcional</li>
               <li>✦ Parceria e colaboração</li>

@@ -71,7 +71,7 @@ const Header = () => {
                 onClick={(e) => handleNavClick(e, "#cta")}
                 className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-[15px] focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px] inline-flex items-center"
               >
-                Fale direto conosco
+                Vamos criar juntos?
               </a>
             </li>
           </ul>
@@ -108,7 +108,7 @@ const Header = () => {
                   onClick={(e) => handleNavClick(e, "#cta")}
                   className="bg-secondary text-white font-body font-semibold px-6 py-3 rounded-full transition-all duration-300 ease-out hover:scale-110 text-sm inline-flex items-center mt-2 focus:outline-none focus:ring-2 focus:ring-accent min-h-[44px]"
                 >
-                  Fale direto conosco
+                  Vamos criar juntos?
                 </a>
               </li>
             </ul>

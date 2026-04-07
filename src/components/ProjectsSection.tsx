@@ -169,7 +169,7 @@ const ProjectsSection = () => {
     <section id="projetos" className="py-20 md:py-32 scroll-mt-20 bg-card/50">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="section-title">Projetos</h2>
           <div className="organic-divider w-28 mt-4" aria-hidden="true" />
         </div>
