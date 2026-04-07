@@ -1,4 +1,5 @@
 import { ArrowUp, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import logoLunae from "@/assets/logo-lunae.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,7 +20,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 items-start mb-12">
           {/* Logo */}
           <div>
-            <h2 className="text-4xl font-display tracking-wider mb-4">LUNAE</h2>
+            <img
+              src={logoLunae}
+              alt="Lunae Studio logo"
+              className="h-10 w-auto mb-4"
+            />
             <p className="font-body text-primary-foreground/80 text-sm leading-relaxed">
               Estúdio criativo que une Design Visual, UX Design e Estratégia Digital.
             </p>

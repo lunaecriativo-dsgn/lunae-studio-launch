@@ -6,14 +6,14 @@ const AboutSection = () => {
     <section id="sobre" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h2 className="section-title">Sobre Nós</h2>
           <div className="organic-divider w-40 mt-4" aria-hidden="true" />
         </div>
 
         {/* About Content */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-          <div className="space-y-6 moon-glow">
+          <div className="space-y-6 moon-glow text-left">
             <p className="font-body text-foreground leading-relaxed">
               A Lunae nasceu da união entre Luiza e Nayla, refletindo nossa conexão com o Design e a Criatividade. 
               Além da beleza do nosso nome, "Lunae" significa "Lua" em latim – símbolo de transformação e inspiração.

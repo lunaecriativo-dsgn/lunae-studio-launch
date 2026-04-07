@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Text Content */}
           <div className="animate-fade-in-up moon-glow">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-body font-bold text-primary leading-snug mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-body font-medium text-primary leading-snug mb-6">
               "Transformamos ideias em experiências visuais que inspiram e conectam."
             </h1>
             
