@@ -181,7 +181,31 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-6 font-bold;
+    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-4 font-bold;
+  }
+
+  .graphite-sketch {
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--primary) / 0.35) 10%,
+      hsl(var(--secondary) / 0.5) 30%,
+      hsl(var(--primary) / 0.4) 50%,
+      hsl(var(--secondary) / 0.3) 70%,
+      hsl(var(--primary) / 0.2) 90%,
+      transparent 100%
+    );
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6'%3E%3Cpath d='M0,3 Q8,1 16,3 T32,3 T48,2 T64,4 T80,3' stroke='black' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6'%3E%3Cpath d='M0,3 Q8,1 16,3 T32,3 T48,2 T64,4 T80,3' stroke='black' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
   }
 
   .organic-divider {
