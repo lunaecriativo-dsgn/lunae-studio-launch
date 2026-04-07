@@ -8,7 +8,7 @@ const AboutSection = () => {
         {/* Section Title */}
         <div className="mb-8">
           <h2 className="section-title">Sobre Nós</h2>
-          <div className="organic-divider w-40 mt-4" aria-hidden="true" />
+          <div className="graphite-sketch" aria-hidden="true" />
         </div>
 
         {/* About Content */}

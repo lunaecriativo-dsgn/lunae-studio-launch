@@ -166,12 +166,12 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projetos" className="py-20 md:py-32 scroll-mt-20 bg-card/50">
+    <section id="projetos" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
         <div className="mb-8">
           <h2 className="section-title">Projetos</h2>
-          <div className="organic-divider w-28 mt-4" aria-hidden="true" />
+          <div className="graphite-sketch" aria-hidden="true" />
         </div>
 
         {/* Projects Carousel */}
@@ -198,7 +198,8 @@ const ProjectsSection = () => {
             {displayProjects.map((project, index) => (
               <article
                 key={`${project.id}-${index}`}
-                className="bg-card rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl animate-fade-in"
+                className="rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:shadow-xl animate-fade-in"
+                style={{ background: 'rgba(255, 255, 255, 0.9)' }}
               >
                 {/* Project Image */}
                 <div className="aspect-video overflow-hidden">

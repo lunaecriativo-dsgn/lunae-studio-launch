@@ -20,7 +20,7 @@ const Index = () => {
       }}
     >
       {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-background/92 pointer-events-none" />
+      <div className="absolute inset-0 bg-background/80 pointer-events-none" />
       
       {/* Content */}
       <div className="relative z-10">
