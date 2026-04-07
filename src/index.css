@@ -181,7 +181,7 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl lg:text-6xl text-primary mb-4;
+    @apply text-4xl md:text-5xl lg:text-6xl text-primary mb-4 font-bold;
   }
 
   .organic-divider {
