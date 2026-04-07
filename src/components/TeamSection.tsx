@@ -100,10 +100,10 @@ const TeamSection = () => {
     <section id="equipe" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h2 className="section-title">Equipe Lunae</h2>
           <div className="organic-divider w-36 mt-4" aria-hidden="true" />
-          <p className="font-body text-lg text-muted-foreground mt-6 max-w-2xl">
+          <p className="font-body text-lg text-muted-foreground mt-6 max-w-2xl text-left">
             Somos um Estúdio Criativo que une estratégia e arte para construir marcas, 
             experiências visuais e produtos digitais que deixam sua identidade brilhar.
           </p>

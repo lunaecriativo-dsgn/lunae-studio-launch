@@ -13,7 +13,7 @@ const AboutSection = () => {
 
         {/* About Content */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20 items-center">
-          <div className="space-y-6 moon-glow">
+          <div className="space-y-6 moon-glow text-left">
             <p className="font-body text-foreground leading-relaxed">
               A Lunae nasceu da união entre Luiza e Nayla, refletindo nossa conexão com o Design e a Criatividade. 
               Além da beleza do nosso nome, "Lunae" significa "Lua" em latim – símbolo de transformação e inspiração.
