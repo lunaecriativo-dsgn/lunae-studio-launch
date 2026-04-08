@@ -19,13 +19,13 @@ const HeroSection = () => {
           {/* Artistic brush stroke behind text */}
           <div className="relative">
             {/* Multi-color paint smudge */}
-            <div className="absolute inset-0 -inset-x-16 -inset-y-8 z-0 pointer-events-none" aria-hidden="true">
+            <div className="absolute -inset-x-16 -inset-y-8 z-0 pointer-events-none" style={{ top: '-8%', bottom: '-8%' }} aria-hidden="true">
               {/* Purple base */}
               <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-scale-in"
                 style={{
                   width: '110%',
-                  height: '130%',
+                  height: '110%',
                   background: 'radial-gradient(ellipse 80% 70% at 30% 50%, hsla(245, 40%, 38%, 0.35) 0%, transparent 70%)',
                   filter: 'blur(18px)',
                   borderRadius: '60% 40% 55% 45% / 50% 60% 40% 50%',
@@ -36,7 +36,7 @@ const HeroSection = () => {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-scale-in"
                 style={{
                   width: '100%',
-                  height: '120%',
+                  height: '100%',
                   background: 'radial-gradient(ellipse 60% 80% at 55% 45%, hsla(351, 93%, 73%, 0.32) 0%, transparent 65%)',
                   filter: 'blur(20px)',
                   borderRadius: '45% 55% 50% 50% / 55% 45% 55% 45%',
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-scale-in"
                 style={{
                   width: '90%',
-                  height: '110%',
+                  height: '90%',
                   background: 'radial-gradient(ellipse 50% 60% at 75% 50%, hsla(56, 96%, 57%, 0.30) 0%, transparent 60%)',
                   filter: 'blur(16px)',
                   borderRadius: '50% 50% 45% 55% / 45% 55% 50% 50%',
