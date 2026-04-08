@@ -182,19 +182,25 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-4 font-bold relative inline-block;
-    padding: 0.1em 0.4em 0.1em 0.15em;
+    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-3 font-bold relative inline-block;
+    padding: 0.1em 0.5em 0.15em 0.2em;
+    text-decoration: none;
+    border-bottom: none;
   }
 
   .section-title::before {
     content: '';
     position: absolute;
-    inset: 0;
+    inset: -4px -6px;
     z-index: -1;
-    background: radial-gradient(ellipse 100% 80% at 50% 55%, hsla(56, 96%, 57%, 0.3) 0%, hsla(56, 96%, 57%, 0.15) 40%, transparent 70%);
-    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-    transform: rotate(-1deg) scaleX(1.1);
+    background:
+      radial-gradient(ellipse 70% 90% at 25% 50%, hsla(245, 38%, 45%, 0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 80% at 75% 45%, hsla(351, 100%, 77%, 0.16) 0%, transparent 65%),
+      radial-gradient(ellipse 80% 70% at 50% 55%, hsla(56, 96%, 57%, 0.22) 0%, transparent 60%);
+    border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
+    transform: rotate(-1deg) scaleX(1.08);
     pointer-events: none;
+    filter: blur(1px);
   }
 
   .organic-divider {

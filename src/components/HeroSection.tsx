@@ -30,7 +30,7 @@ const HeroSection = () => {
               Design visual, UX e estratégia digital unidos para contar a história única do seu negócio.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <a
                 href="#cta"
                 onClick={(e) => handleCTAClick(e, "#cta")}
@@ -38,12 +38,6 @@ const HeroSection = () => {
               >
                 Vamos criar juntos?
               </a>
-              <button
-                onClick={handleWhatsApp}
-                className="btn-secondary text-base focus-ring"
-              >
-                Fale direto conosco
-              </button>
             </div>
 
             {/* Organic hand-drawn divider */}
