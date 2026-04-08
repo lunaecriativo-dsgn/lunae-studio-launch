@@ -80,9 +80,8 @@ const ServicesSection = () => {
     <section id="servicos" className="py-20 md:py-32 scroll-mt-20">
       <div className="section-container">
         {/* Section Title */}
-        <div className="mb-8">
+        <div className="mb-6">
           <h2 className="section-title">Serviços</h2>
-          <div className="graphite-sketch" aria-hidden="true" />
         </div>
 
         {/* Services Grid */}

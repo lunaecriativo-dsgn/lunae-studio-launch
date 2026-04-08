@@ -182,31 +182,19 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-4 font-bold;
+    @apply text-3xl md:text-4xl lg:text-5xl text-primary mb-4 font-bold relative inline-block;
+    padding: 0.1em 0.4em 0.1em 0.15em;
   }
 
-  .graphite-sketch {
-    display: block;
-    width: 80px;
-    height: 6px;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      hsl(var(--primary) / 0.35) 10%,
-      hsl(var(--secondary) / 0.5) 30%,
-      hsl(var(--primary) / 0.4) 50%,
-      hsl(var(--secondary) / 0.3) 70%,
-      hsl(var(--primary) / 0.2) 90%,
-      transparent 100%
-    );
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6'%3E%3Cpath d='M0,3 Q8,1 16,3 T32,3 T48,2 T64,4 T80,3' stroke='black' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='6'%3E%3Cpath d='M0,3 Q8,1 16,3 T32,3 T48,2 T64,4 T80,3' stroke='black' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    mask-size: contain;
-    -webkit-mask-size: contain;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
+  .section-title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse 100% 80% at 50% 55%, hsla(56, 96%, 57%, 0.3) 0%, hsla(56, 96%, 57%, 0.15) 40%, transparent 70%);
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    transform: rotate(-1deg) scaleX(1.1);
+    pointer-events: none;
   }
 
   .organic-divider {
