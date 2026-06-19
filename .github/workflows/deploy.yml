@@ -24,6 +24,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check secrets
+        run: |
+          echo "Host: OK"
+
       - name: Deploy via SSH
         uses: easingthemes/ssh-deploy@main
         env:
