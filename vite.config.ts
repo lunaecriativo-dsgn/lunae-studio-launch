@@ -8,6 +8,9 @@ export default defineConfig(({mode}) => {
   return {
     base: '/dist/', // 👈 ADICIONE ESTA LINHA
     plugins: [react(), tailwindcss()],
+    build: {
+      outDir: 'public'
+            },
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
